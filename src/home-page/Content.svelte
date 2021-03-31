@@ -6,7 +6,7 @@
     import Contact from '../content/Contact.svelte';
     import Blog from '../content/Blog.svelte';
   </script>
-  <main class="container-fluid">
+  <main>
     <Banner/>
     <Projects/>
     <About/>

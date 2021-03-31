@@ -2,6 +2,9 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +21,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:visited {
@@ -60,4 +63,30 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+section {
+    height: 100vh;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 40px;
+    font-weight: bold;
+    color: #666;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
 }

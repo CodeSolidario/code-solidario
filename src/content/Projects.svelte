@@ -4,7 +4,7 @@
     repositoryStore,
     initialState,
     topics,
-    pagination
+    pagination,
   } from "../stores/repositories";
 
   let repositories = [];
@@ -23,7 +23,9 @@
         .get(searchUrl)
         .then((response) => {
           $pagination.totalCount = response.data.total_count;
-          $pagination.totalPages = Math.ceil($pagination.totalCount / $pagination.totalPerPage)
+          $pagination.totalPages = Math.ceil(
+            $pagination.totalCount / $pagination.totalPerPage
+          );
           return response.data.items;
         })
         .catch((err) => {
@@ -68,7 +70,7 @@
       {#await promise}
         <p>...waiting</p>
       {:then}
-      <div class="row">
+        <div class="row">
           {#each repositories as repo}
             <div class="card col-lg-4 col-md-6 col-sm12">
               <div class="card-body">
@@ -84,7 +86,7 @@
               </div>
             </div>
           {/each}
-          </div>
+        </div>
       {:catch error}
         <p style="color: red">{error.message}</p>
       {/await}
@@ -92,13 +94,23 @@
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item">
-          <button class="page-link" aria-label="Previous" on:click={$pagination.page -= 1, handleSelect} disabled={$pagination.page <= 1}>
+          <button
+            class="page-link"
+            aria-label="Previous"
+            on:click={(($pagination.page -= 1), handleSelect)}
+            disabled={$pagination.page <= 1}
+          >
             <span aria-hidden="true">&laquo;</span>
             <span class="sr-only">Previous</span>
           </button>
         </li>
         <li class="page-item">
-          <button class="page-link" aria-label="Next" on:click={$pagination.page += 1, handleSelect} disabled={$pagination.page >= $pagination.totalPages}>
+          <button
+            class="page-link"
+            aria-label="Next"
+            on:click={(($pagination.page += 1), handleSelect)}
+            disabled={$pagination.page >= $pagination.totalPages}
+          >
             <span aria-hidden="true">&raquo;</span>
             <span class="sr-only">Next</span>
           </button>
@@ -107,5 +119,6 @@
     </nav>
   </div>
 </section>
+
 <style>
 </style>

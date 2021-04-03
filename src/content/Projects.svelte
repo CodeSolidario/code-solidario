@@ -17,7 +17,7 @@
     if (filter) {
       searchUrl += `+topic:${filter}`;
     }
-    searchUrl += `&type=Repositories&ref=searchresults&page=${$pagination.page}&per_page=10`;
+    searchUrl += `&type=Repositories&ref=searchresults&page=${$pagination.page}&per_page=${$pagination.totalPerPage}`;
     try {
       const repositories = await axios
         .get(searchUrl)
@@ -51,18 +51,7 @@
     <div class="select">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm12">
-          <!-- svelte-ignore a11y-no-onchange -->
-          <select
-            class="form-select"
-            aria-label="Default select example"
-            bind:value={filter}
-            on:change={handleSelect}
-          >
-            <option selected value="">Open this select menu</option>
-            {#each $topics as topic}
-              <option value={topic.name}>{topic.name}</option>
-            {/each}
-          </select>
+          <input type="text" bind:value={filter} on:blur={handleSelect} on:keydown={handleSelect} placeholder="busca">
         </div>
       </div>
     </div>
@@ -72,7 +61,7 @@
       {:then}
         <div class="row">
           {#each repositories as repo}
-            <div class="card col-lg-4 col-md-6 col-sm12">
+            <div class="card col-lg-4 col-md-6 col-sm12" style="border: none">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href={repo.html_url} target="_blank" class="card-link"

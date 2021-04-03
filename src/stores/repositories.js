@@ -9,7 +9,7 @@ export const pagination = writable({
     page: 1,
     totalPages: 1,
     totalCount: 1,
-    totalPerPage: 10
+    totalPerPage: 12
 })
 
 export const topics = writable([

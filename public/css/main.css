@@ -198,9 +198,9 @@ iframe {
   display: block;
   font-family: Montserrat-ExtraBold;
   font-size: 24px;
-  color: #333333;
+  color:  rgba(132,106,221, 1) !important;
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
   padding-bottom: 36px;
 }
 

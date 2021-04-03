@@ -46,11 +46,11 @@
 </script>
 
 <section id="projetos">
-  Section projetos
-  <div class="content">
+    <div class="content">
+      <h2>Projetos</h2>
     <div class="select">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <input type="text" bind:value={filter} on:blur={handleSelect} on:keydown={handleSelect} placeholder="busca">
         </div>
       </div>
@@ -112,5 +112,6 @@
 <style>
   #projetos{
     height: auto !important;
+    text-align: center;
   }
 </style>

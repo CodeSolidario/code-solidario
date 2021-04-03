@@ -56,3 +56,9 @@
     </a>
   </div>
 </figure>
+
+<style>
+  #home {
+    margin-top: 50px;
+  }
+</style>

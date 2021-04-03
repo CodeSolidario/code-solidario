@@ -1,14 +1,20 @@
-<div id=footer>
-    <p>
-        <!-- svelte-ignore a11y-missing-content -->
-        <button><a href="#home" class="btn"></a></button>
-    </p>
+<!-- <div class="push"></div> -->
+<div id="footer">
+  <p>
+    <!-- svelte-ignore a11y-missing-content -->
+    <button><a href="#home" class="btn" /></button>
+  </p>
 </div>
 
 <style>
-    #footer{
-        height: 50px;
-        background-color: black;
-        color: blanchedalmond;
-    }
+  /* .push {
+    background-color: #000;
+    height: 50px;
+  } */
+  #footer {
+    background-color: #000;
+    height: 100px;
+    left: 0;
+    z-index: -1;
+  }
 </style>

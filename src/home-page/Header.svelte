@@ -33,4 +33,11 @@
 </nav>
 
 <style>
+  .navbar-nav {
+    margin-top: 15px !important;
+  }
+  .nav-link{
+    font-weight: bold !important;
+    color:  rgba(132,106,221, 0.5) !important;
+  }
 </style>

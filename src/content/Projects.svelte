@@ -110,4 +110,7 @@
 </section>
 
 <style>
+  #projetos{
+    height: auto !important;
+  }
 </style>

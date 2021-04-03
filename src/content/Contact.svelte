@@ -5,8 +5,6 @@
 				<div class="contact100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
-                <!-- Implementar https://formspree.io/-->
-                <!--form action="https://formspree.io/f/{form_id}" method="post" -->
 				<form action="https://formspree.io/f/mgerevbb" method="POST" class="contact100-form validate-form">
 					<span class="contact100-form-title">
 						Entre em contato
@@ -43,3 +41,6 @@
 		</div>
 	</div>
 </section>
+
+<style>
+</style>

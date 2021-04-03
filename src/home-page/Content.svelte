@@ -10,7 +10,7 @@
     <Banner/>
     <Projects/>
     <About/>
-    <Blog/>
+    <!-- <Blog/> -->
     <Contact/>
   </main>
   

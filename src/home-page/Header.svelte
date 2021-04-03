@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Navbar</a>
+  <a class="navbar-brand" href="/"><img src="images/logo-1.png" alt="logo code solidário"></a>
   <button
     class="navbar-toggler"
     type="button"
@@ -22,9 +22,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#sobre">SOBRE</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#blog">BLOG</a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="#contato">CONTATO</a>
       </li>

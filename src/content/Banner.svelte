@@ -1,4 +1,4 @@
-<figure id="carroussel">
+<figure id="home">
   <div
     id="carouselExampleIndicators"
     class="carousel slide"

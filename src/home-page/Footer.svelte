@@ -4,7 +4,7 @@
     <!-- svelte-ignore a11y-missing-content -->
     <button><a href="#home" class="btn-scroll" /></button>
   </p>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-3">
       <span
         ><a
@@ -34,38 +34,16 @@
         <p>&copy; Made by Code Solidário</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <style>
   #footer {
     color: #fff;
-    background-color: #000;
-    height: 100px;
     left: 0;
     z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  a,
-  a:hover {
-    color: #fff;
-    font-size: 18px;
-  }
-  @media only screen and (max-device-width: 480px) {
-    .row{
-      margin-top: -100px;
-    }
-    a,
-    a:hover {
-      margin-bottom: 100px !important;
-      color: #000;
-      font-size: 18px;
-      z-index: 1;
-    }
-    p {
-      color: #ccc;
-    }
   }
 </style>

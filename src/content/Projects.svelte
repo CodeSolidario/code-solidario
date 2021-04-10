@@ -13,7 +13,7 @@
   let filter = "";
 
   const fetchRepo = async () => {
-    let searchUrl = `https://api.github.com/search/repositories?q=topic:opensource`;
+    let searchUrl = `https://api.github.com/search/repositories?q=topic:open-source+topic:interesse-social`;
     if (filter) {
       searchUrl += `+topic:${filter}`;
     }

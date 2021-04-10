@@ -1,107 +1,142 @@
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-	color: #333;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+  color: rgb(0, 100, 200);
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-	color: rgb(0,80,160);
+  color: rgb(0, 80, 160);
 }
 
 label {
-	display: block;
+  display: block;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+  color: #ccc;
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
 }
 
 button:disabled {
-	color: #999;
+  color: #999;
 }
 
 button:not(:disabled):active {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 
 button:focus {
-	border-color: #666;
+  border-color: #666;
 }
 
 section {
-    height: 100vh;
+  height: 100vh;
 }
 .btn-scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    background-color: #000;
-    text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
 }
 .btn-scroll::after {
-    content: "↑";
-    font-size: 40px;
-    font-weight: bold;
-    color: #666;
-    transition: margin-top 250ms;
+  content: "↑";
+  font-size: 40px;
+  font-weight: bold;
+  color: #666;
+  transition: margin-top 250ms;
 }
 .btn-scroll:hover::after {
-    margin-top:-8px;
+  margin-top: -8px;
 }
 .content {
-	position: relative;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: auto;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-h2{
+h2 {
   display: block !important;
   font-family: Montserrat-ExtraBold !important;
   font-size: 24px !important;
-  color:  rgba(132,106,221, 1) !important;
+  color: rgba(132, 106, 221, 1) !important;
   line-height: 1.2 !important;
   text-align: center !important;
   padding-bottom: 36px !important;
+}
+
+.btn-success {
+  background-color: black !important;
+}
+.btn-success:hover {
+  background-color: rgba(132, 106, 221, 1) !important;
+}
+
+@media screen and (min-device-width: 1039px) { 
+    h1 {
+		font-size: 2.8em !important;
+	  }
+}
+
+@media screen and (min-device-width: 780px) and (max-device-width: 1038px) { 
+    h1 {
+		font-size: 1.8em !important;
+	  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 779px) { 
+    h1 {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+    h1 {
+		font-size: 12px !important;
+	  }
 }

@@ -50,11 +50,22 @@
     <h2>Projetos</h2>
     <div class="select">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <input type="text" bind:value={filter} placeholder="busca" />
-          <button class="btn btn-outline-info" on:click={handleSelect}
-            >Buscar</button
-          >
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Problema social - Ex: desemprego"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+            bind:value={filter}
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-success"
+              type="button"
+              on:click={handleSelect}>Buscar</button
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -73,7 +84,7 @@
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">{repo.language}</h6>
                 <p class="card-text">
-                  {repo.description ? repo.description.substring(0,100) : ""}
+                  {repo.description ? repo.description.substring(0, 100) : ""}
                 </p>
               </div>
             </div>
@@ -118,7 +129,7 @@
     text-align: center;
   }
   .card-link {
-    color: rgba(132,106,221, 1) !important;
+    color: rgba(132, 106, 221, 1) !important;
     font-weight: bold;
     text-decoration: none;
   }

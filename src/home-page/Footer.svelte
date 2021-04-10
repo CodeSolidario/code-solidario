@@ -6,13 +6,28 @@
   </p>
   <div class="row">
     <div class="col-3">
-      <span><a href="https://github.com/CodeSolidario/code-solidario" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
+      <span
+        ><a
+          href="https://github.com/CodeSolidario/code-solidario"
+          target="_blank"><i class="fa fa-github-alt" aria-hidden="true" /></a
+        ></span
+      >
     </div>
     <div class="col-3">
-      <span><a href="https://www.facebook.com/codesolidario" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+      <span
+        ><a href="https://www.facebook.com/codesolidario" target="_blank"
+          ><i class="fa fa-facebook-square" aria-hidden="true" /></a
+        ></span
+      >
     </div>
     <div class="col-3">
-      <span><a href="https://www.linkedin.com/company/code-solid%C3%A1rio/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+      <span
+        ><a
+          href="https://www.linkedin.com/company/code-solid%C3%A1rio/"
+          target="_blank"
+          ><i class="fa fa-linkedin-square" aria-hidden="true" /></a
+        ></span
+      >
     </div>
     <div class="row">
       <div class="col-12">
@@ -29,13 +44,28 @@
     height: 100px;
     left: 0;
     z-index: -1;
-    padding-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  a, a:hover {
+  a,
+  a:hover {
     color: #fff;
     font-size: 18px;
+  }
+  @media only screen and (max-device-width: 480px) {
+    .row{
+      margin-top: -100px;
+    }
+    a,
+    a:hover {
+      margin-bottom: 100px !important;
+      color: #000;
+      font-size: 18px;
+      z-index: 1;
+    }
+    p {
+      color: #ccc;
+    }
   }
 </style>

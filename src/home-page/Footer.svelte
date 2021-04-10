@@ -23,10 +23,6 @@
 </div>
 
 <style>
-  /* .push {
-    background-color: #000;
-    height: 50px;
-  } */
   #footer {
     color: #fff;
     background-color: #000;
@@ -38,11 +34,6 @@
     align-items: center;
     justify-content: center;
   }
-  /* .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
   a, a:hover {
     color: #fff;
     font-size: 18px;

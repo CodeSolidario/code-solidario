@@ -68,7 +68,7 @@ button:focus {
 section {
     height: 100vh;
 }
-.btn {
+.btn-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,14 +80,14 @@ section {
     background-color: #000;
     text-decoration: none;
 }
-.btn::after {
+.btn-scroll::after {
     content: "↑";
     font-size: 40px;
     font-weight: bold;
     color: #666;
     transition: margin-top 250ms;
 }
-.btn:hover::after {
+.btn-scroll:hover::after {
     margin-top:-8px;
 }
 .content {

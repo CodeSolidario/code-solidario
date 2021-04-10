@@ -2,7 +2,7 @@
 <div id="footer">
   <p>
     <!-- svelte-ignore a11y-missing-content -->
-    <button><a href="#home" class="btn" /></button>
+    <button><a href="#home" class="btn-scroll" /></button>
   </p>
 </div>
 

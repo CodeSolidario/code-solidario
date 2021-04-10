@@ -46,12 +46,15 @@
 </script>
 
 <section id="projetos">
-    <div class="content">
-      <h2>Projetos</h2>
+  <div class="content">
+    <h2>Projetos</h2>
     <div class="select">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <input type="text" bind:value={filter} on:blur={handleSelect} on:keydown={handleSelect} placeholder="busca">
+          <input type="text" bind:value={filter} placeholder="busca" />
+          <button class="btn btn-outline-info" on:click={handleSelect}
+            >Buscar</button
+          >
         </div>
       </div>
     </div>
@@ -70,7 +73,7 @@
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">{repo.language}</h6>
                 <p class="card-text">
-                  {repo.description ? repositories.description : ""}
+                  {repo.description ? repo.description.substring(0,100) : ""}
                 </p>
               </div>
             </div>
@@ -110,8 +113,13 @@
 </section>
 
 <style>
-  #projetos{
+  #projetos {
     height: auto !important;
     text-align: center;
+  }
+  .card-link {
+    color: rgba(132,106,221, 1) !important;
+    font-weight: bold;
+    text-decoration: none;
   }
 </style>
